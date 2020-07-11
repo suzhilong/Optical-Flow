@@ -28,7 +28,7 @@ uint8_t compute_flow(uint8_t *image1, uint8_t *image2, float x_rate, float y_rat
 		{
 			/* test pixel if it is suitable for flow tracking */
 			uint32_t diff = compute_diff(image1, i, j, (uint16_t) global_data.param[PARAM_IMAGE_WIDTH]);//计算SAD
-			if (diff < global_data.param[PARAM_BOTTOM_FLOW_FEATURE_THRESHOLD])//SAD太小，不满足特征点的要求
+			if (diff < global_data.param[PARAM_BOTTOM_FLOW_FEATURE_THRESHOLD])//DIFF太小，不满足特征点的要求
 			{
 				continue;
 			}
