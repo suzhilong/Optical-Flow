@@ -62,7 +62,7 @@ int main()
 	float dx, dy;
 	uint8_t qual = computeFlow(img1, img2, &dx, &dy);
 
-	printf("qual: \ndx: %d, dy: %d \n", qual, dx, dy);
+	printf("qual: \ndx: %f, dy: %f \n", qual, dx, dy);
 
 	system("pause");
 	return 0;
